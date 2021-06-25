@@ -64,6 +64,7 @@ final class SpecWriter
         throws MojoExecutionException, IOException
     {
         writeList( mojo.getDefineStatements(), "%define " );
+        writeList( mojo.getGlobalStatements(), "%global " );
 
         spec.println( "Name: " + mojo.getName() );
         spec.println( "Version: " + mojo.getVersion() );

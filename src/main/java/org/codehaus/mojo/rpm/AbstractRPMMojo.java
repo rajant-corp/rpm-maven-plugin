@@ -541,6 +541,12 @@ public abstract class AbstractRPMMojo
     private List<String> defineStatements;
 
     /**
+     * A list of <code>%global</code> statements
+     */
+    @Parameter
+    private List<String> globalStatements;
+
+    /**
      * The default file mode (octal string) to assign to files when installed. <br/>
      * Only applicable to a <a href="map-params.html">Mapping</a> if <a href="map-params.html#filemode">filemode</a>, <a
      * href="map-params.html#username">username</a>, AND <a href="map-params.html#groupname">groupname</a> are
@@ -1494,6 +1500,13 @@ public abstract class AbstractRPMMojo
         return this.defineStatements;
     }
 
+    /**
+     * @return Returns the {@link #globalStatements}.
+     */
+    final List<String> getGlobalStatements()
+    {
+        return this.globalStatements;
+    }
     /**
      * @return Returns the {@link #defaultFilemode}.
      */

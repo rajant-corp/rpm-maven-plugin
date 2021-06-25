@@ -16,7 +16,7 @@
   </parent>
 
   <artifactId>rpm-maven-plugin</artifactId>
-  <version>2.2.0</version>
+  <version>2.2.0-rajant</version>
   <packaging>maven-plugin</packaging>
 
   <name>RPM Maven Plugin</name>
